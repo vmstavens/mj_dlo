@@ -1,5 +1,5 @@
 
-# Student DLO Demo
+# `mj_sim`
 
 Hi there,
 
