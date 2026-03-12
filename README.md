@@ -53,6 +53,8 @@ You should see a MuJoCo viewer window with a flexible cable attached to a mocap 
 - In `sim.py`, the `twist`, `bend`, and `size` parameters in `DLOSim._build_model` control the cable stiffness and length.
 - In `utils.py`, the `mjx_cable` helper builds the cable using MuJoCo's spec API.
 
+> **OBS**: Be aware that I have two functions `mjs_cable` and `mjx_cable`, `mjs_cable` uses the composite plugin, whereas `mjx_cable` build the cable based on the C code from [MuJoCo](https://github.com/google-deepmind/mujoco/blob/main/src/user/user_composite.cc#L243) using MuJoCo specs. Since `mjx_cable` is not a official MuJoCo cable builder, results may vary.
+
 ## Typings
 
 You can use `pybind11-stubgen` to generate Python stubs for `mujoco` into the `typings` folder:
