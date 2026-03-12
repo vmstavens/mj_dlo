@@ -1,5 +1,5 @@
 
-# `mj_sim`
+# `mj_dlo`
 
 Hi there,
 
