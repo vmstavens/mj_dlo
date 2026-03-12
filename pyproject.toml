@@ -1,0 +1,11 @@
+[project]
+name = "student-help"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mujoco>=3.6.0",
+    "numpy>=2.4.3",
+    "pybind11-stubgen>=2.5.5",
+]
